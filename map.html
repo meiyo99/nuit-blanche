@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuit Blanche Toronto - Interactive Events Map</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/assets/logo.png" alt="Nuit Blanche Toronto" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#maps">Maps</a></li>
+                <li class="dropdown">
+                    <a href="#about">About <span class="dropdown-arrow">▼</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#more">More Info <span class="dropdown-arrow">▼</span></a>
+                </li>
+                <li><a href="#past">Past Events</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <aside class="sidebar">
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Search events...">
+            </div>
+            
+            <div class="events-list" id="events-list">
+                <!-- Event cards will be dynamically generated here -->
+            </div>
+        </aside>
+
+        <section class="map-container">
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/map.js"></script>
+</body>
+</html>
