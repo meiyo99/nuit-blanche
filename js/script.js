@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
             venue: 'Canada Malting Silos',
             date: 'October 5, 2025',
             time: '7:00 PM - 7:00 AM',
-            isAccessible: true,
-            isKidFriendly: false
         },
         {
             id: 'exhibit-2',
@@ -21,8 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             venue: 'Retail space on Queens Quay East',
             date: 'October 5, 2024',
             time: '7:00 PM - 7:00 AM',
-            isAccessible: true,
-            isKidFriendly: true
         },
         {
             id: 'exhibit-3',
@@ -33,8 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
             venue: 'STRUT, Perth Moves',
             date: 'October 5, 2025',
             time: '7:00 PM - 7:00 AM',
-            isAccessible: false,
-            isKidFriendly: false
         },
         {
             id: 'exhibit-4',
@@ -45,8 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
             venue: 'TD Centre Courtyard',
             date: 'October 5, 2025',
             time: '7:00 PM - 7:00 AM',
-            isAccessible: true,
-            isKidFriendly: true
         },
         {
             id: 'exhibit-5',
@@ -57,8 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
             venue: '390 Bay Street',
             date: 'October 5, 2025',
             time: '7:00 PM - 7:00 AM',
-            isAccessible: false,
-            isKidFriendly: true
         },
         {
             id: 'exhibit-6',
@@ -69,8 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
             venue: 'Nathan Phillips Square',
             date: 'October 5, 2025',
             time: '7:00 PM - 7:00 AM',
-            isAccessible: true,
-            isKidFriendly: false
         },
         {
             id: 'exhibit-7',
@@ -81,8 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
             venue: '100 Queen Street West',
             date: 'October 5, 2025',
             time: '7:00 PM - 7:00 AM',
-            isAccessible: true,
-            isKidFriendly: false
         },
         {
             id: 'exhibit-8',
@@ -93,8 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
             venue: 'Mel Lastman Square',
             date: 'October 5, 2025',
             time: '7:00 PM - 7:00 AM',
-            isAccessible: true,
-            isKidFriendly: false
         },
         {
             id: 'exhibit-9',
@@ -105,8 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
             venue: '5120 Yonge Street',
             date: 'October 5, 2025',
             time: '7:00 PM - 7:00 AM',
-            isAccessible: true,
-            isKidFriendly: false
         },
         {
             id: 'exhibit-10',
@@ -117,8 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
             venue: 'Mel Lastman Square North',
             date: 'October 5, 2025',
             time: '7:00 PM - 7:00 AM',
-            isAccessible: true,
-            isKidFriendly: true
         },
         {
             id: 'exhibit-11',
@@ -129,8 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
             venue: 'North York Civic Centre Plaza',
             date: 'October 5, 2025',
             time: '7:00 PM - 7:00 AM',
-            isAccessible: true,
-            isKidFriendly: true
         },
     ];
 
