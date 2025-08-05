@@ -3,14 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuit Blanche Toronto - Interactive Events Map</title>
-    
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
-     
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <title>Events - Nuit Blanche Toronto</title>
     
     <link rel="stylesheet" href="/css/styles.css">
 </head>
@@ -22,8 +15,8 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="map.html" class="active">Maps</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="map.html">Maps</a></li>
                 <li class="dropdown">
                     <a href="#about">About <span class="dropdown-arrow">▼</span></a>
                 </li>
@@ -35,19 +28,66 @@
         </div>
     </nav>
 
-    <main class="main-container">
-        <aside class="sidebar">
-            <div class="search-container">
-                <input type="text" id="search-input" class="search-input" placeholder="Search events...">
+    <main class="events-main">
+        <section class="events-header">
+            <div class="events-header-container">
+                <div class="events-title-section">
+                    <h1 class="events-title">Explore all the Events</h1>
+                    <p class="events-subtitle">Browse, search, or filter the ongoing events at Nuit Blanche, Toronto</p>
+                </div>
+                
+                <div class="events-filters">
+                    <div class="search-filter">
+                        <input 
+                            type="text" 
+                            id="events-search" 
+                            class="search-input-events" 
+                            placeholder="Search by title, project number, artists..."
+                        >
+                        <button class="search-button">🔍</button>
+                    </div>
+                    
+                    <div class="filter-dropdowns">
+                        <div class="dropdown-filter">
+                            <select id="project-type-filter" class="filter-select">
+                                <option value="">Project Type</option>
+                                <option value="installation">Installation</option>
+                                <option value="performance">Performance</option>
+                                <option value="projection">Projection</option>
+                                <option value="interactive">Interactive</option>
+                            </select>
+                        </div>
+                        
+                        <div class="dropdown-filter">
+                            <select id="art-location-filter" class="filter-select">
+                                <option value="">Art Location</option>
+                                <option value="downtown">Downtown</option>
+                                <option value="north-york">North York</option>
+                                <option value="waterfront">Waterfront</option>
+                                <option value="financial-district">Financial District</option>
+                            </select>
+                        </div>
+                        
+                        <div class="dropdown-filter">
+                            <select id="accessibility-filter" class="filter-select">
+                                <option value="">Based on Accessibility</option>
+                                <option value="wheelchair-accessible">Wheelchair Accessible</option>
+                                <option value="audio-description">Audio Description</option>
+                                <option value="sign-language">Sign Language</option>
+                                <option value="low-sensory">Low Sensory</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="events-list" id="events-list">
-                <!-- Event cards will be dynamically generated here -->
-            </div>
-        </aside>
+        </section>
 
-        <section class="map-container">
-            <div id="map"></div>
+        <section class="events-grid-section">
+            <div class="events-grid-container">
+                <div class="events-grid" id="events-grid">
+                    <!-- Event cards will be populated by JavaScript -->
+                </div>
+            </div>
         </section>
     </main>
 
@@ -98,9 +138,7 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
     <script src="/js/common.js"></script>
-    <script src="/js/map.js"></script>
+    <script src="/js/events.js"></script>
 </body>
 </html>
