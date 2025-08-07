@@ -1156,7 +1156,7 @@ body {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
     line-height: 1.1;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: -0.5px;
 }
 
