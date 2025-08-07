@@ -178,6 +178,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         exhibitsToRender.forEach((exhibit, index) => {
             const card = createEventCard(exhibit, index);
+            
+            // Add click event listener to navigate to event description page
+            card.addEventListener('click', function() {
+                // For now, we'll navigate to the Riparia event description for the first exhibit
+                // In the future, this could be made dynamic based on exhibit.id
+                if (exhibit.id === 'exhibit-1') {
+                    window.location.href = 'event-description.html';
+                } else {
+                    // For other events, you could create separate description pages
+                    // or make the event-description.html page dynamic
+                    window.location.href = 'event-description.html';
+                }
+            });
+            
             eventsGrid.appendChild(card);
         });
     }
